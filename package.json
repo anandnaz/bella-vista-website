@@ -1,0 +1,41 @@
+{
+  "name": "bella-vista-restaurant",
+  "version": "1.0.0",
+  "description": "A responsive restaurant landing page built with HTML, CSS, JavaScript, and Bootstrap",
+  "main": "index.html",
+  "scripts": {
+    "start": "npx live-server",
+    "dev": "npx live-server --port=3000",
+    "build": "echo 'Static site - no build process needed'",
+    "lint": "npx htmlhint index.html && npx stylelint css/*.css",
+    "format": "npx prettier --write *.html css/*.css js/*.js"
+  },
+  "keywords": [
+    "restaurant",
+    "landing-page",
+    "responsive",
+    "html",
+    "css",
+    "javascript",
+    "bootstrap",
+    "indian-cuisine"
+  ],
+  "author": "Web Developer",
+  "license": "MIT",
+  "devDependencies": {
+    "live-server": "^1.2.2",
+    "prettier": "^2.8.8",
+    "htmlhint": "^1.1.4",
+    "stylelint": "^15.10.2"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/anandnaz/bella-vista-restaurant.git"
+  },
+  "homepage": "https://anandnaz.github.io/bella-vista-restaurant",
+  "browserslist": [
+    "> 1%",
+    "last 2 versions",
+    "not ie <= 11"
+  ]
+}

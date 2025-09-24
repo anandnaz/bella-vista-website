@@ -1,0 +1,552 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Bella Vista - Authentic Indian cuisine in the heart of the city. Experience fine dining with fresh ingredients and traditional recipes.">
+    <meta name="keywords" content="restaurant, Indian cuisine, fine dining, biryani, curry, naan, tandoori, vegetarian, vegan, gluten-free">
+
+    <!-- Open Graph tags for social sharing -->
+    <meta property="og:title" content="Bella Vista - Authentic Indian Restaurant">
+    <meta property="og:description" content="Experience authentic Indian cuisine with fresh ingredients and traditional recipes">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://bellavista.com">
+
+    <title>Bella Vista - Authentic Indian Restaurant</title>
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="./assets/images/favicon.svg">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Open+Sans:wght@300;400;600&display=swap" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/custom.css">
+</head>
+<body>
+    <!-- Dark Mode Toggle Button -->
+    <button id="darkModeToggle" class="btn btn-outline-light position-fixed dark-mode-toggle-btn" title="Toggle Dark Mode">
+        <i class="fas fa-moon" id="darkModeIcon"></i>
+    </button>
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNavbar">
+        <div class="container">
+            <a class="navbar-brand" href="#home">
+                <img src="./assets/images/favicon.svg" alt="Bella Vista Logo" height="40" class="d-inline-block align-text-top me-2" width="40" height="40">
+                Bella Vista
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" title="Toggle navigation" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#home">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#menu">Menu</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#gallery">Gallery</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#testimonials">Reviews</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero-section">
+        <div class="hero-overlay"></div>
+        <div class="container">
+            <div class="row min-vh-100 align-items-center">
+                <div class="col-lg-8 mx-auto text-center text-white position-relative">
+                    <img src="./assets/images/favicon.svg" alt="Bella Vista Logo" class="hero-logo mb-4" height="80" width="80">
+                    <h1 class="display-3 fw-bold mb-4">Welcome to Bella Vista</h1>
+                    <p class="lead mb-4">Experience authentic Indian  cuisine crafted with passion, tradition, and the finest ingredients</p>
+                    <div class="hero-buttons">
+                        <a href="#contact" class="btn btn-primary btn-lg me-3 mb-2">Reserve Table</a>
+                        <a href="#menu" class="btn btn-outline-light btn-lg mb-2">View Menu</a>
+                    </div>
+                    <!-- Today's Special Badge -->
+                    <div id="todaysSpecial" class="mt-4">
+                        <div class="badge bg-warning text-dark fs-6 p-3">
+                            <i class="fas fa-star me-2"></i>Today's Special: Butter Chicken Kulcha Combo - Rs 299/-
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-5">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-6 mb-4 mb-lg-0">
+                    <img src="./assets/images/chef.jpg" alt="Our Head Chef" class="img-fluid rounded shadow">
+                </div>
+                <div class="col-lg-6">
+                    <h2 class="section-title">Our Story</h2>
+                    <p class="lead">Founded in 2001 by the Sharma family, Bella Vista has been serving authentic Indian cuisine for over two decades.</p>
+                    <p>Our love for traditional Indian cooking, combined with contemporary culinary techniques, creates a truly memorable dining experience. We source the freshest produce and spices from local farmers and hand-select specialty ingredients from across India to ensure every dish is packed with genuine flavor.</p>
+                    <p>From our aromatic biryanis to our hand-prepared breads and vibrant curries, every meal is crafted with care and respect for Indian culinary traditions. Our head chef, Rajiv Sharma, trained in the kitchens of Lucknow and brings generations of rich family recipes and regional specialties to your table, blending the depth and diversity of Indian cuisine with modern creativity.</p>
+                    <div class="row mt-4">
+                        <div class="col-sm-6">
+                            <h5><i class="fas fa-award text-primary me-2"></i>Award Winning</h5>
+                            <p class="small">Best Indian Restaurant 2023</p>
+                        </div>
+                        <div class="col-sm-6">
+                            <h5><i class="fas fa-heart text-primary me-2"></i>Family Owned</h5>
+                            <p class="small">Three generations of tradition</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Menu Highlights Section -->
+    <section id="menu" class="py-5 bg-light">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 text-center mb-5">
+                    <h2 class="section-title">Menu Highlights</h2>
+                    <p class="lead">Discover our signature dishes crafted with authentic Indian recipes</p>
+                </div>
+            </div>
+            <div class="row g-4">
+                <div class="col-md-6 col-lg-4">
+                    <div class="card menu-card h-100">
+                        <img src="./assets/images/butter-chicken.jpg" class="card-img-top" alt="Butter Chicken">
+                        <div class="card-body">
+                            <h5 class="card-title">Butter Chicken (Murgh Makhani)</h5>
+                            <p class="card-text">iconic North Indian dish features tender pieces of chicken cooked in a rich, creamy, and buttery tomato-based sauce.</p>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <span class="price">Rs 299/-</span>
+                                <span class="badge bg-success">Popular</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                    <div class="card menu-card h-100">
+                        <img src="./assets/images/biryani.webp" class="card-img-top" alt="Biryani">
+                        <div class="card-body">
+                            <h5 class="card-title">Biryani</h5>
+                            <p class="card-text">Aromatic basmati rice cooked with tender pieces of marinated meat and a blend of spices.</p>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <span class="price">Rs 399/-</span>
+                                <span class="badge bg-warning text-dark">Chef's Choice</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                    <div class="card menu-card h-100">
+                        <img src="./assets/images/samosas.jpg" class="card-img-top" alt="Samosas">
+                        <div class="card-body">
+                            <h5 class="card-title">Samosas</h5>
+                            <p class="card-text">Crispy pastry filled with spiced potatoes, peas, and herbs, served with mint chutney.</p>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <span class="price">Rs 149/-</span>
+                                <span class="badge bg-primary">Premium</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                    <div class="card menu-card h-100">
+                        <img src="./assets/images/palak-paneer.webp" class="card-img-top" alt="Palak Paneer">
+                        <div class="card-body">
+                            <h5 class="card-title">Palak Paneer</h5>
+                            <p class="card-text">Creamy spinach and cottage cheese dish, seasoned with traditional Indian spices.</p>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <span class="price">Rs 349/-</span>
+                                <span class="badge bg-danger">Signature</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                    <div class="card menu-card h-100">
+                        <img src="./assets/images/masala-dosa.jpg" class="card-img-top" alt="Masala Dosa">
+                        <div class="card-body">
+                            <h5 class="card-title">Masala Dosa</h5>
+                            <p class="card-text">Crispy rice crepe filled with spiced potatoes, served with coconut chutney and sambar.</p>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <span class="price">Rs 249/-</span>
+                                <span class="badge bg-info">South Indian</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                    <div class="card menu-card h-100">
+                        <img src="./assets/images/ice-cream.jpg" class="card-img-top" alt="Ice Cream">
+                        <div class="card-body">
+                            <h5 class="card-title">Ice Cream</h5>
+                            <p class="card-text">Soft and creamy dessert made with milk and sugar, available in various flavors.</p>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <span class="price">Rs 99/-</span>
+                                <span class="badge bg-secondary">Dessert</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="text-center mt-5">
+                <a href="#" class="btn btn-primary btn-lg">View Full Menu</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section id="gallery" class="py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 text-center mb-5">
+                    <h2 class="section-title">Gallery</h2>
+                    <p class="lead">Take a glimpse into our restaurant atmosphere</p>
+                </div>
+            </div>
+            <div class="row g-4">
+                <div class="col-md-4">
+                    <img src="./assets/images/restaurant-interior.webp" class="img-fluid rounded gallery-img" alt="Restaurant Interior" data-bs-toggle="modal" data-bs-target="#galleryModal" data-bs-image="https://images.unsplash.com/photo-1414235077428-338989a2e8c0?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80">
+                </div>
+                <div class="col-md-4">
+                    <img src="./assets/images/dining-area.jpg" class="img-fluid rounded gallery-img" alt="Dining Area" data-bs-toggle="modal" data-bs-target="#galleryModal" data-bs-image="https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80">
+                </div>
+                <div class="col-md-4">
+                    <img src="./assets/images/kitchen.jpg" class="img-fluid rounded gallery-img" alt="Kitchen" data-bs-toggle="modal" data-bs-target="#galleryModal" data-bs-image="https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80">
+                </div>
+                <div class="col-md-4">
+                    <img src="./assets/images/food-preparation.jpg" class="img-fluid rounded gallery-img" alt="Food Preparation" data-bs-toggle="modal" data-bs-target="#galleryModal" data-bs-image="https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80">
+                </div>
+                <div class="col-md-4">
+                    <img src="./assets/images/wine-cellar.jpg" class="img-fluid rounded gallery-img" alt="Wine Cellar" data-bs-toggle="modal" data-bs-target="#galleryModal" data-bs-image="https://images.unsplash.com/photo-1553361371-9b22f78e8b1d?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80">
+                </div>
+                <div class="col-md-4">
+                    <img src="./assets/images/outdoor-seating.webp" class="img-fluid rounded gallery-img" alt="Outdoor Seating" data-bs-toggle="modal" data-bs-target="#galleryModal" data-bs-image="https://images.unsplash.com/photo-1559329007-40df8a9345d8?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery Modal -->
+    <div class="modal fade" id="galleryModal" tabindex="-1" aria-labelledby="galleryModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="galleryModalLabel">Gallery</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body text-center">
+                    <img id="galleryModalImage" src="" class="img-fluid" alt="Gallery Image">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Testimonials Section -->
+    <section id="testimonials" class="py-5 bg-light">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 text-center mb-5">
+                    <h2 class="section-title">What Our Customers Say</h2>
+                    <p class="lead">Read reviews from our satisfied guests</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-8 mx-auto">
+                    <div id="testimonialsCarousel" class="carousel slide" data-bs-ride="carousel">
+                        <div class="carousel-indicators">
+                            <button type="button" data-bs-target="#testimonialsCarousel" data-bs-slide-to="0" class="active" aria-label="Go to slide 1"></button>
+                            <button type="button" data-bs-target="#testimonialsCarousel" data-bs-slide-to="1" aria-label="Go to slide 2"></button>
+                            <button type="button" data-bs-target="#testimonialsCarousel" data-bs-slide-to="2" aria-label="Go to slide 3"></button>
+                            <button type="button" data-bs-target="#testimonialsCarousel" data-bs-slide-to="3" aria-label="Go to slide 4"></button>
+                            <button type="button" data-bs-target="#testimonialsCarousel" data-bs-slide-to="4" aria-label="Go to slide 5"></button>
+                        </div>
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <div class="testimonial-card text-center p-4">
+                                    <div class="stars mb-3">
+                                        <i class="fas fa-star text-warning"></i>
+                                        <i class="fas fa-star text-warning"></i>
+                                        <i class="fas fa-star text-warning"></i>
+                                        <i class="fas fa-star text-warning"></i>
+                                        <i class="fas fa-star text-warning"></i>
+                                    </div>
+                                    <p class="testimonial-text">"Absolutely fantastic! The pasta was cooked to perfection and the service was impeccable. This is hands down the best Indian restaurant in the city."</p>
+                                    <div class="testimonial-author">
+                                        <strong>Sarah Khan</strong>
+                                        <div class="text-muted">Food Blogger</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <div class="testimonial-card text-center p-4">
+                                    <div class="stars mb-3">
+                                        <i class="fas fa-star text-warning"></i>
+                                        <i class="fas fa-star text-warning"></i>
+                                        <i class="fas fa-star text-warning"></i>
+                                        <i class="fas fa-star text-warning"></i>
+                                        <i class="fas fa-star text-warning"></i>
+                                    </div>
+                                    <p class="testimonial-text">"The ambiance is perfect for a romantic dinner. The biryani was divine and the wine selection is outstanding. Will definitely return!"</p>
+                                    <div class="testimonial-author">
+                                        <strong>Michael Shah</strong>
+                                        <div class="text-muted">Local Resident</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <div class="testimonial-card text-center p-4">
+                                    <div class="stars mb-3">
+                                        <i class="fas fa-star text-warning"></i>
+                                        <i class="fas fa-star text-warning"></i>
+                                        <i class="fas fa-star text-warning"></i>
+                                        <i class="fas fa-star text-warning"></i>
+                                        <i class="fas fa-star text-warning"></i>
+                                    </div>
+                                    <p class="testimonial-text">"Exceptional food quality and authentic Indian flavors. The staff is knowledgeable and friendly. This place brings back memories of my trip to India!"</p>
+                                    <div class="testimonial-author">
+                                        <strong>Emma Davis</strong>
+                                        <div class="text-muted">Travel Enthusiast</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <div class="testimonial-card text-center p-4">
+                                    <div class="stars mb-3">
+                                        <i class="fas fa-star text-warning"></i>
+                                        <i class="fas fa-star text-warning"></i>
+                                        <i class="fas fa-star text-warning"></i>
+                                        <i class="fas fa-star text-warning"></i>
+                                        <i class="fas fa-star text-warning"></i>
+                                    </div>
+                                    <p class="testimonial-text">"Great atmosphere for business dinners. The Mutton Biryani was tender and flavorful. Professional service and excellent presentation."</p>
+                                    <div class="testimonial-author">
+                                        <strong>Hassan Ali</strong>
+                                        <div class="text-muted">Business Executive</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <div class="testimonial-card text-center p-4">
+                                    <div class="stars mb-3">
+                                        <i class="fas fa-star text-warning"></i>
+                                        <i class="fas fa-star text-warning"></i>
+                                        <i class="fas fa-star text-warning"></i>
+                                        <i class="fas fa-star text-warning"></i>
+                                        <i class="fas fa-star text-warning"></i>
+                                    </div>
+                                    <p class="testimonial-text">"Family-friendly environment with delicious food. The kids loved the butter chicken and we enjoyed the wine selection. Perfect for special occasions!"</p>
+                                    <div class="testimonial-author">
+                                        <strong>Lisa Kaiser</strong>
+                                        <div class="text-muted">Family Customer</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#testimonialsCarousel" data-bs-slide="prev" title="Previous testimonial">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#testimonialsCarousel" data-bs-slide="next" title="Next testimonial">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Next</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 text-center mb-5">
+                    <h2 class="section-title">Contact & Location</h2>
+                    <p class="lead">Get in touch with us or visit our restaurant</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-6 mb-4">
+                    <div class="contact-info">
+                        <h4 class="mb-4">Get In Touch</h4>
+                        <div class="contact-item mb-3">
+                            <i class="fas fa-map-marker-alt text-primary me-3"></i>
+                            <div>
+                                <strong>Address:</strong><br>
+                                Opposite Bodh Gaya Temple<br>
+                                BodhGaya District, IN 824231
+                            </div>
+                        </div>
+                        <div class="contact-item mb-3">
+                            <i class="fas fa-phone text-primary me-3"></i>
+                            <div>
+                                <strong>Phone:</strong><br>
+                                <a href="tel:+91 9934099517">+91 12345 67890</a>
+                            </div>
+                        </div>
+                        <div class="contact-item mb-3">
+                            <i class="fas fa-envelope text-primary me-3"></i>
+                            <div>
+                                <strong>Email:</strong><br>
+                                <a href="mailto:info@bellavista.com">info@bellavista.com</a>
+                            </div>
+                        </div>
+                        <div class="contact-item mb-4">
+                            <i class="fas fa-clock text-primary me-3"></i>
+                            <div>
+                                <strong>Opening Hours:</strong><br>
+                                Mon-Thu: 11:00 AM - 10:00 PM<br>
+                                Fri-Sat: 11:00 AM - 11:00 PM<br>
+                                Sun: 12:00 PM - 9:00 PM
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Contact Form -->
+                    <div class="contact-form">
+                        <h4 class="mb-4">Send Us a Message</h4>
+                        <form id="contactForm" novalidate>
+                            <div class="row">
+                                <div class="col-md-6 mb-3">
+                                    <label for="firstName" class="form-label">First Name <span class="text-danger">*</span></label>
+                                    <input type="text" class="form-control" id="firstName" required>
+                                    <div class="invalid-feedback">Please provide a first name.</div>
+                                </div>
+                                <div class="col-md-6 mb-3">
+                                    <label for="lastName" class="form-label">Last Name <span class="text-danger">*</span></label>
+                                    <input type="text" class="form-control" id="lastName" required>
+                                    <div class="invalid-feedback">Please provide a last name.</div>
+                                </div>
+                            </div>
+                            <div class="mb-3">
+                                <label for="email" class="form-label">Email <span class="text-danger">*</span></label>
+                                <input type="email" class="form-control" id="email" required>
+                                <div class="invalid-feedback">Please provide a valid email address.</div>
+                            </div>
+                            <div class="mb-3">
+                                <label for="phone" class="form-label">Phone Number</label>
+                                <input type="tel" class="form-control" id="phone">
+                            </div>
+                            <div class="mb-3">
+                                <label for="guests" class="form-label">Number of Guests</label>
+                                <select class="form-select" id="guests">
+                                    <option value="">Select number of guests</option>
+                                    <option value="1">1 Guest</option>
+                                    <option value="2">2 Guests</option>
+                                    <option value="3">3 Guests</option>
+                                    <option value="4">4 Guests</option>
+                                    <option value="5">5 Guests</option>
+                                    <option value="6+">6+ Guests</option>
+                                </select>
+                            </div>
+                            <div class="mb-3">
+                                <label for="date" class="form-label">Preferred Date</label>
+                                <input type="date" class="form-control" id="date">
+                            </div>
+                            <div class="mb-3">
+                                <label for="message" class="form-label">Message <span class="text-danger">*</span></label>
+                                <textarea class="form-control" id="message" rows="4" required minlength="10" maxlength="500"></textarea>
+                                <div class="invalid-feedback">Please provide a message (10-500 characters).</div>
+                                <div class="form-text">Maximum 500 characters</div>
+                            </div>
+                            <button type="submit" class="btn btn-primary btn-lg">Send Message</button>
+                        </form>
+                    </div>
+                </div>
+
+                <div class="col-lg-6">
+                    <!-- Google Maps Embed -->
+                    <div class="map-container">
+                        <h4 class="mb-4">Find Us</h4>
+                        <iframe 
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3609.009252107774!2d84.991439!3d24.695857!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x398d2b1c2e7e6b3d%3A0x8e4e4e4e4e4e4e4e!2sOpposite%20Mahabodhi%20Temple%2C%20Bodh%20Gaya%2C%20Bihar%20824231%2C%20India!5e0!3m2!1sen!2sin!4v1718000000000!5m2!1sen!2sin" 
+                            width="100%" 
+                            height="400" 
+                            class="map-iframe custom-map-style"
+                            allowfullscreen="" 
+                            loading="lazy" 
+                            title="Bella Vista Restaurant Location">
+                        </iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-light py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 mb-4">
+                    <div class="footer-logo mb-3">
+                        <img src="./assets/images/favicon.svg" alt="Bella Vista Logo" height="40" class="me-2">
+                        <span class="h4">Bella Vista</span>
+                    </div>
+                    <p>Experience authentic Indian cuisine crafted with passion, tradition, and the finest ingredients.</p>
+                    <div class="social-icons mt-3">
+                        <a href="#" class="social-icon me-3" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="social-icon me-3" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="social-icon me-3" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="social-icon me-3" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+                <div class="col-lg-4 mb-4">
+                    <h5>Opening Hours</h5>
+                    <ul class="list-unstyled">
+                        <li><strong>Monday - Thursday:</strong> 11:00 AM - 10:00 PM</li>
+                        <li><strong>Friday - Saturday:</strong> 11:00 AM - 11:00 PM</li>
+                        <li><strong>Sunday:</strong> 12:00 PM - 9:00 PM</li>
+                    </ul>
+                    <p class="mt-3"><small>Reservations recommended for dinner service</small></p>
+                </div>
+                <div class="col-lg-4 mb-4">
+                    <h5>Contact Info</h5>
+                    <ul class="list-unstyled">
+                        <li><i class="fas fa-map-marker-alt me-2"></i>Opposite Bodh Gaya Temple, IN 824231</li>
+                        <li><i class="fas fa-phone me-2"></i>+91 12345 67890</li>
+                        <li><i class="fas fa-envelope me-2"></i>info@bellavista.com</li>
+                    </ul>
+                </div>
+            </div>
+            <hr class="my-4">
+            <div class="row align-items-center">
+                <div class="col-md-6">
+                    <p class="mb-0">&copy; 2025 Bella Vista Restaurant. All rights reserved.</p>
+                </div>
+                <div class="col-md-6 text-md-end">
+                    <a href="#" class="text-light me-3">Privacy Policy</a>
+                    <a href="#" class="text-light">Terms of Service</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Custom JavaScript -->
+    <script src="js/main.js"></script>
+</body>
+</html>
